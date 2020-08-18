@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_default"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMessage"
+            style="@style/text_large"
+            android:layout_gravity="end"
+            android:background="@color/colorBackground"
+            android:drawableEnd="@android:drawable/ic_btn_speak_now"
+            android:drawableTint="#fff"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:gravity="center"
+            android:maxLength="80"
+            android:padding="8dp"
+            android:text="@string/app_name"
+            android:textColor="@color/colorDanger"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_default"
+            android:drawableStart="@android:drawable/ic_input_add"
+            android:hint="Masukkan pesan..."
+            android:imeOptions="actionSend"
+            android:inputType="text" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="@dimen/component_size"
+            android:layout_height="@dimen/component_size"
+            android:layout_gravity="center_horizontal"
+            tools:src="@mipmap/ic_launcher"/>
+
+        <Spinner
+            android:id="@+id/spEducation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:id="@+id/cbPython"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PYTHON"/>
+
+        <CheckBox
+            android:id="@+id/cbPHP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="PHP"/>
+
+        <CheckBox
+            android:id="@+id/cbJava"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JAVA"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:layout_marginTop="@dimen/space_default"
+            android:layout_marginBottom="@dimen/space_default">
+
+            <RadioGroup
+                android:id="@+id/rgGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laki - laki"
+                    android:layout_marginEnd="@dimen/space_default"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan"
+                    android:layout_marginEnd="@dimen/space_default"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Two in one"
+                    android:layout_marginEnd="@dimen/space_default"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak punya"
+                    android:layout_marginEnd="@dimen/space_default"/>
+
+            </RadioGroup>
+
+        </HorizontalScrollView>
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/rbFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stepSize="1"
+            android:max="5"/>
+
+        <Button
+            android:layout_marginTop="@dimen/space_default"
+            android:id="@+id/btnCommit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_green_dark"
+            android:text="COMMIT" />
+
+    </LinearLayout>
+
+</ScrollView>

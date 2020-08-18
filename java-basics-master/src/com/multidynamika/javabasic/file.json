@@ -1,0 +1,27 @@
+[
+  {
+    "price": 69,
+    "id": 21,
+    "name": "'Pears - 1 Kg"
+  },
+  {
+    "price": 95,
+    "id": 22,
+    "name": "'Pomegranate - 1 Kg"
+  },
+  {
+    "price": 160,
+    "id": 23,
+    "name": "'Raspberry - 1/4 Kg"
+  },
+  {
+    "price": 180,
+    "id": 24,
+    "name": "'Strawberry - 1/4 Kg"
+  },
+  {
+    "price": 28,
+    "id": 25,
+    "name": "'Water Melon - 1 Kg"
+  }
+]

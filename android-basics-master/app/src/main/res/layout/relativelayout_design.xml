@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/component_size"
+        android:layout_toStartOf="@id/btnTop"
+        android:background="@color/colorDanger" />
+
+    <Button
+        android:id="@+id/btnTop"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/component_size"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/space_default"
+        android:background="@color/colorDanger" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnBottom"
+        android:layout_below="@id/btnTop"
+        android:layout_marginTop="@dimen/space_default"
+        android:layout_marginBottom="@dimen/space_default"
+        android:background="@color/colorDanger" />
+
+    <Button
+        android:id="@+id/btnBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/component_size"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorDanger" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/component_size"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/space_default"
+        android:layout_toEndOf="@id/btnBottom"
+        android:background="@color/colorDanger" />
+
+</RelativeLayout>

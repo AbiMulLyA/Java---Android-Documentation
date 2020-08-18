@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Okepedia</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="basics">Basics</string>
+    <string name="exercises">Exercises</string>
+    <string name="materials">Materials</string>
+    <string-array name="last_education">
+        <item>SMK</item>
+        <item>SMA</item>
+        <item>D1</item>
+        <item>D2</item>
+        <item>D3</item>
+        <item>D4</item>
+        <item>S1</item>
+    </string-array>
+</resources>

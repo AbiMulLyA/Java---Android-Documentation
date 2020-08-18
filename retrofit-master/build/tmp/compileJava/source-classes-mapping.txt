@@ -1,0 +1,19 @@
+repository/models/RepoModel.java
+ repository.models.RepoModel
+repository/services/GitHubService.java
+ repository.services.GitHubService
+repository/models/OwnerModel.java
+ repository.models.OwnerModel
+repository/models/TodoModel.java
+ repository.models.TodoModel
+repository/clients/APIClient.java
+ repository.clients.APIClient
+repository/clients/GitHubClient.java
+ repository.clients.GitHubClient
+repository/clients/TodoClient.java
+ repository.clients.TodoClient
+repository/services/TodoService.java
+ repository.services.TodoService
+MainApplication.java
+ MainApplication
+ MainApplication$1
